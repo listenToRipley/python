@@ -8,3 +8,6 @@ class Comment:
 
 
 first_comment = Comment("First comment")
+print(first_comment.text)
+print(first_comment.votes_qty)
+print(first_comment.__dict__)
