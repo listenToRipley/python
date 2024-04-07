@@ -12,4 +12,6 @@ To see all the attributes/methods that can be call on a class you can use `dir(i
 
 Self is variable references as a specific instance. 
 
-Within a classes, own instance are you use the magic method of `__init__`. This is allow these to always be unique to each instance.
+Within a classes, own instance are you use the magic method of `__init__`. This is allow these to always be unique to each instance. 
+
+If you fail to include the variables listed in `__init__`, this will require in an error as these are now considered required elements to create an object, unless you provide default options.
