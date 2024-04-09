@@ -1,18 +1,28 @@
 class User:
+  users_qty = 0
+
   def __init__(self, username, email):
     self.username = username
     self.email = email
+    User.users_qty += 1
 
   def info(self):
     print(f"Use {self.username} has email {self.email}")
 
 first_user = User('user1', 'example@example.com')
+second_user = User('user2', 'example2@example.com')
 print(first_user.info())
+print(f'Quality of users : {User.users_qty}')
+print(User.__dict__)
 
 class Comment: 
+
+  total_comments = 0
+
   def __init__(self, text):
     self.text = text
     self.votes_qty = 0
+    Comment.total_comments += 1
 
   def upvote(self):
     self.votes_qty +=1
@@ -35,6 +45,7 @@ print(first_comment.upvote) # bound method now that the instance has been create
 first_comment.upvote()
 #also valid syntax = Comment.upvote(first_comment) but it is not recommended
 print(first_comment.votes_qty)
+print(Comment)
 
 
 class Post:
@@ -84,3 +95,6 @@ class Calculator:
     raise ValueError("Can't divide by zero.")
 
 print(Calculator.add(20,10))
+print(Calculator.subtract(20,10))
+print(Calculator.mult(20,10))
+print(Calculator.divide(20,10))

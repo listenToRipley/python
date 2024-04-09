@@ -25,3 +25,11 @@ You would use these when you need to create methods that are independent of the 
 Non static methods are known as bound methods.
 
 These do not require a self parameter and called directly.
+
+This could be a way to incapsulate a series of methods that can be easily exported and imported.
+
+### Class Attributes
+
+These are meant as a specific value that is associated with all instances of the class and can be changes based values changes inside of the `__init__` Important to note that while this value 
+
+They cannot be modified within an instance, only by the function methodology associated with that variable. If you make changes, it will only be applied to the specific instance.
