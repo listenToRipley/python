@@ -27,6 +27,10 @@ class Comment:
   def upvote(self):
     self.votes_qty +=1
 
+  def __add__(self, other): #magic method
+    return (f"{self.text} {other.text}", 
+            self.votes_qty + other.votes_qty)
+
   @staticmethod
   def merge_comments(first, second):
     return f"{first}, {second}"
@@ -47,6 +51,10 @@ first_comment.upvote()
 print(first_comment.votes_qty)
 print(Comment)
 
+second_comment = Comment("Second")
+second_comment.votes_qty
+
+print(first_comment + second_comment)
 
 class Post:
   def __init__(self, title, content, author):
@@ -57,6 +65,9 @@ class Post:
 
   def likes(self):
     self.likes_qty += 1
+
+  def __add__(self, other):
+    return f"Add : {self.title} {other.title}
 
   @staticmethod
   def format_post(title, comment):
@@ -74,6 +85,9 @@ my_post.likes()
 print(my_post.likes_qty)
 format_post = Post.format_post("This is the title", "This is the post content.")
 print(format_post)
+another_post = Post('This is a title', 'Some content', 'Who wrote it')
+
+print(my_post + another_post)
 
 class Calculator:
   @staticmethod

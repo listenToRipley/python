@@ -28,6 +28,12 @@ These do not require a self parameter and called directly.
 
 This could be a way to incapsulate a series of methods that can be easily exported and imported.
 
+### Magic Method
+
+Universally accepted methods for instances of the class in which they are provided. They are different from regular methods since these will give you access to operands to use as a shorthand instead of calling the specific method name.
+
+You will do this by using underscore and  the operands name, `__add__`
+
 ### Class Attributes
 
 These are meant as a specific value that is associated with all instances of the class and can be changes based values changes inside of the `__init__` Important to note that while this value 
