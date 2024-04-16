@@ -1,8 +1,8 @@
 # Classes
 
-You can see example of these [here](../Examples/classes.py).
+You can see example of these [here](../Examples/Classes/classes.py).
 
-For a formal summary, see [forums](../Examples/forum.py)
+For a formal summary, see [forums](../Examples/Classes/forum.py)
 
 Attributes of a class will only be modified by the specific instance.
 
