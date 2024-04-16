@@ -15,6 +15,17 @@ print(first_user.info())
 print(f'Quality of users : {User.users_qty}')
 print(User.__dict__)
 
+class AdminUser(User):
+  def __init__(self, username, email, role):
+    super().__init__(username, email)
+    self.role = role
+    self.is_Admin = True
+
+my_admin = AdminUser('admin1', 'admin@admin.com', 'Administrator')
+
+print(f"ADMIN: {my_admin.__dict__}")
+print(User.__subclasses__())
+
 class Comment: 
 
   total_comments = 0
@@ -26,6 +37,10 @@ class Comment:
 
   def upvote(self):
     self.votes_qty +=1
+
+  def __add__(self, other): #magic method
+    return (f"{self.text} {other.text}", 
+            self.votes_qty + other.votes_qty)
 
   @staticmethod
   def merge_comments(first, second):
@@ -47,6 +62,10 @@ first_comment.upvote()
 print(first_comment.votes_qty)
 print(Comment)
 
+second_comment = Comment("Second")
+second_comment.votes_qty
+
+print(first_comment + second_comment)
 
 class Post:
   def __init__(self, title, content, author):
@@ -57,6 +76,12 @@ class Post:
 
   def likes(self):
     self.likes_qty += 1
+
+  def __add__(self, other):
+    return f"Add : {self.title} {other.title}"
+
+  def __eq__(self, other):
+    return self.title == other.title
 
   @staticmethod
   def format_post(title, comment):
@@ -74,6 +99,10 @@ my_post.likes()
 print(my_post.likes_qty)
 format_post = Post.format_post("This is the title", "This is the post content.")
 print(format_post)
+another_post = Post('This is a title', 'Some content', 'Who wrote it')
+
+print(my_post + another_post)
+print(my_post == another_post) # allows the string to be compared instead of the stored value which will not be able to check accurately
 
 class Calculator:
   @staticmethod
@@ -98,3 +127,11 @@ print(Calculator.add(20,10))
 print(Calculator.subtract(20,10))
 print(Calculator.mult(20,10))
 print(Calculator.divide(20,10))
+
+class ExtendedList(list):
+  def print_list_info(self):
+    print(f"List has {len(self)} elements")
+
+custom_list = ExtendedList([3,5,2])
+
+custom_list.print_list_info()
