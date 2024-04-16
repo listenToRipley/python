@@ -12,4 +12,12 @@ class Post:
 class Forum:
     def __init__(self):
         self.users = []
-        self.post = []
+        self.posts = []
+
+    def register_user(self, username, email):
+        user = User(username, email)
+        users.append(user)
+
+    def create_post(self, title, content, author):
+        post = Post(title, content, author)
+        posts.append(post)
