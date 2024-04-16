@@ -2,7 +2,8 @@
 
 ## Table of Contents
 
-- [Classes](./ClassesNotes.md)
+- [Classes](./Classes.md)
+- [Modules](./Modules.md)
 
 ## General Notes
 
