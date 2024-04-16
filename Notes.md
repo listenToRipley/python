@@ -16,7 +16,7 @@ Self is variable references as a specific instance.
 
 Within a classes, own instance are you use the magic method of `__init__`. This is allow these to always be unique to each instance. 
 
-If you fail to include the variables listed in `__init__`, this will require in an error as these are now considered required elements to create an object, unless you provide default options. This is also known as encapsulation. 
+If you fail to include the variables listed in `__init__`, this will require in an error as these are now considered required elements to create an object, unless you provide default options. This is also known as encapsulation.
 
 ### Static Methods
 
@@ -39,3 +39,11 @@ You will do this by using underscore and  the operands name, `__add__`
 These are meant as a specific value that is associated with all instances of the class and can be changes based values changes inside of the `__init__` Important to note that while this value 
 
 They cannot be modified within an instance, only by the function methodology associated with that variable. If you make changes, it will only be applied to the specific instance.
+
+### Inheritance
+
+There are extended classes, which take in one item and allow for additional methods.
+
+Init is automatically created with the passed element, and all other items added to this class will be an extension.
+
+Think of anything created in this extended class is a child of the passed element.
