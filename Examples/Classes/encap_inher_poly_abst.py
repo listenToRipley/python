@@ -1,4 +1,5 @@
 import math
+from abc import ABC, abstractmethod
 
 # Encapsulation
 
@@ -76,3 +77,26 @@ shapes = [Circle(5), Rectangle(10,2), Circle(7), Rectangle(25, 75)]
 
 for shape in shapes:
   print(shape.calc_area())
+
+
+# Abstraction
+
+class Payment():
+  @abstractmethod
+  def process_payment(self):
+    pass
+
+class CreditCardPayment(Payment):
+  def process_payment(self):
+    #Code to process credit card payment
+    pass
+
+class StripePayment(Payment):
+  def process_payment(self):
+    #Code to process payment
+    pass
+
+class PayPalPayment(Payment):
+  def process_payment(self):
+    #Code to process payment
+    pass
