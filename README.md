@@ -4,4 +4,4 @@ This repo is for learning [Python – Complete Python, Django, Data Science and 
 
 ## Table of Contents
 
-- [Notes](./Notes.md)
+- [Notes](./Notes/README.md)
