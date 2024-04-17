@@ -34,7 +34,8 @@ These are items that can be imported to provide specific functionality.
 
 Some of these built in options are:
 
-- os
+- [os](./Files.md/#os)
+- [pathlib](./Files.md/#pathlib)
 - time
 - sys
 - math

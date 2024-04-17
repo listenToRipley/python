@@ -4,6 +4,7 @@
 
 - [Classes](./Classes.md)
 - [Modules](./Modules.md)
+- [Files](./Files.md)
 
 ## General Notes
 
