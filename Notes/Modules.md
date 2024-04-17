@@ -21,3 +21,9 @@ You can import multiple items, even different types of items, from the same docu
 If not specified by the from format, then all items will be accessed  through dot notation. The same is true if you the as formatting.
 
 There is an option to import all by using `*` it would look like from doc_name import *`, this format is not recommended though. It can cause possible collisions in names, it if you use from, it is recommended you name the specific items you need from the imported document.
+
+### Nested Imports
+
+If the file you are trying to access is located in another folder, then you would use the from syntax to show the parent folder and specify the file you are trying to get to.
+
+If you are importing based on a specific items, then you will use the from dot notation to show the parent file and then the document name. `from parent_folder.child_doc import fun_name`. [Example](../Examples/Modules/main.py)

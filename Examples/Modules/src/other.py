@@ -1,4 +1,4 @@
-import utils
+import Examples.Modules.src.utils as utils
 
 print(utils.hello(utils.my_name))
 

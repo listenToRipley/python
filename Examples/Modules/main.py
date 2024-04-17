@@ -1,8 +1,8 @@
 # import utils
 # import utils as u
 # from utils import hello, my_name as name
-import utils as my_utils
-from other import sum_fn
+from src import utils as my_utils
+from src.other import sum_fn
 
 # print(utils)
 # print(type(utils))
