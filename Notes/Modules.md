@@ -19,3 +19,5 @@ You can import multiple items, even different types of items, from the same docu
 *The name of the import must match across documents.*
 
 If not specified by the from format, then all items will be accessed  through dot notation. The same is true if you the as formatting.
+
+There is an option to import all by using `*` it would look like from doc_name import *`, this format is not recommended though. It can cause possible collisions in names, it if you use from, it is recommended you name the specific items you need from the imported document.
