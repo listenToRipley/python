@@ -52,3 +52,7 @@ You can use `help` to see information about these built in functions.
 To see what you can do with those modules, you would use `type` with the name: `type(module)`
 
 To see the attributes, you would use `dir` with the module: `dir(module)`
+
+### __name__
+
+This is part of the directory system and allows you to see what document you are currently in or document you are currently accessing.[Example](../Examples/Modules/main.py)
