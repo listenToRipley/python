@@ -1,11 +1,18 @@
 import json 
 
+# lists
+
 my_nums = [10,100,58,20]
 
 my_nums_json = json.dumps(my_nums)
 
 print(type(my_nums_json))
 print('list',my_nums_json)
+
+my_list = json.loads('[10, "abc", null, [1,2], {"name": "Natalie"}]')
+print(my_list)
+
+# tuples
 
 my_nums_tup = (10,100,58,20)
 
@@ -34,13 +41,18 @@ my_post = {
     'metadata': (5,7,25)
 }
 
-my_post_json = json.dumps(my_post)
+my_post_json = json.dumps(my_post, indent=1)
+
+files = open('test.txt', 'w')
+files.write(my_post_json)
+
 print(type(my_post_json))
 print("POST : ",my_post_json)
 
 dic_back = json.loads(my_post_json)
 print(type(dic_back))
 print(dic_back) #now tuple is a list.
+print(dic_back['likes_qty'])
 
 #dict with function
 

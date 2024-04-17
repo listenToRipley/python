@@ -1,0 +1,14 @@
+{
+ "title": "post name",
+ "content": "post content",
+ "likes_qty": 25,
+ "author": {
+  "username": "dent.a",
+  "email": "adent@gmail.com"
+ },
+ "metadata": [
+  5,
+  7,
+  25
+ ]
+}
