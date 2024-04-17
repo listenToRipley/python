@@ -59,6 +59,6 @@ This is part of the directory system and allows you to see what document you are
 
 ### Convert to package
 
-Create a folder, place your module files inside of the folder. Create a file called `__init__.py` in the folder. Import the modules into the file and provide a description of what this package does. If you wanted to registure this package for public use, you could do so at [pypi](www.pypi.org).
+Create a folder, place your module files inside of the folder. Create a file called `__init__.py` in the folder. Import the modules into the file and provide a description of what this package does. If you wanted to register this package for public use, you could do so at [pypi](www.pypi.org).
 
 [Example](../Examples/Modules/my_package/)
