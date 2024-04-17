@@ -27,6 +27,6 @@ This is similar to polymorphism. A way to require an action to be included in ch
 
 Since JSON requires double quotes for the key pair values and python dictionaries require a single quote for the key pairs, and we need to convert the boolean values to a python format, you can use `json.loads()` to provide the correct format.
 
-To convert a python dictionary to json formatting, you would use `json.dumps`
+To convert a python dictionary to json formatting, you would use `json.dumps`. Functions cannot be converted to json format.
 
 [Example](../Examples/General/json_to_dict.py)

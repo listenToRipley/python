@@ -41,3 +41,18 @@ print("POST : ",my_post_json)
 dic_back = json.loads(my_post_json)
 print(type(dic_back))
 print(dic_back) #now tuple is a list.
+
+#dict with function
+
+def sum_fn(a,b):
+
+    return a+b
+my_math  = {
+    'title': "Math dic",
+    'sum': sum_fn
+}
+
+# math_json = json.dumps(my_math)
+
+# print(math_json)
+
