@@ -10,10 +10,12 @@ When you import a file, you pull in the whole document.
 
 For a document, you import by the name of the file.
 
-You can rename/ provide an alias by using `as` and give it a different name.
+You can rename/ provide an alias by using `as` and give it a different name. This syntax can also be used on specific items that are imported.
 
 If you want to import only a specific function from a document,(known as select import), you would format the import like `from doc_name import fuc_name`. [Example](../Examples/Modules/module_two.py)
 
+You can import multiple items, even different types of items, from the same document simple by placing a common between each item. [Example](../Examples/Modules/main.py)
+
 *The name of the import must match across documents.*
 
-If not specified by the from format, then all items will be accessed  through dot notation.
+If not specified by the from format, then all items will be accessed  through dot notation. The same is true if you the as formatting.
