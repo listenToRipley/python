@@ -1,4 +1,8 @@
-import Examples.Modules.src.utils as utils
+import sys
+sys.path.insert(0,"../")
+
+import utils as utils
+from main import initialize 
 
 print(utils.hello(utils.my_name))
 
@@ -9,3 +13,5 @@ print("MODULE : OTHER")
 
 print("OTHER ",__name__)
 print(type(__name__))
+
+initialize()

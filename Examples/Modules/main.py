@@ -19,10 +19,18 @@ print(my_utils.hello(my_utils.my_name))
 
 print(type(math))
 
+def initialize():
+    # Code to initialize application and perform setup.
+    print("initializing...")
+
 def main():
-    print("Running main block")
+    # Code for main app functionality.
+    print("Running main block functionality")
 
 print("MAIN : ",__name__)
 print(type(__name__))
 
-print("MAIN", __name__ == '__main__')
+if  __name__ == '__main__':
+    # Only if run directly
+    initialize()
+    main()
