@@ -27,3 +27,28 @@ There is an option to import all by using `*` it would look like from doc_name i
 If the file you are trying to access is located in another folder, then you would use the from syntax to show the parent folder and specify the file you are trying to get to.
 
 If you are importing based on a specific items, then you will use the from dot notation to show the parent file and then the document name. `from parent_folder.child_doc import fun_name`. [Example](../Examples/Modules/main.py)
+
+## Built In Modules
+
+These are items that can be imported to provide specific functionality.
+
+Some of these built in options are:
+
+- os
+- time
+- sys
+- math
+- smtplib
+- zipfile
+- csv
+- statistics
+- pprint
+- calendar
+- regex
+- random
+
+You can use `help` to see information about these built in functions.
+
+To see what you can do with those modules, you would use `type` with the name: `type(module)`
+
+To see the attributes, you would use `dir` with the module: `dir(module)`

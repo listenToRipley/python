@@ -3,6 +3,7 @@
 # from utils import hello, my_name as name
 from src import utils as my_utils
 from src.other import sum_fn
+import math
 
 # print(utils)
 # print(type(utils))
@@ -15,6 +16,8 @@ from src.other import sum_fn
 print(sum_fn(10,2))
 
 print(my_utils.hello(my_utils.my_name))
+
+print(type(math))
 
 def main():
     print("Running main block")
