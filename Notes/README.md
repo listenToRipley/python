@@ -4,6 +4,7 @@
 
 - [Classes](./Classes.md)
 - [Modules](./Modules.md)
+- [Files](./Files.md)
 
 ## General Notes
 
@@ -22,3 +23,11 @@ A way to group items together, but the form related to the action is different a
 ### Abstraction
 
 This is similar to polymorphism. A way to require an action to be included in children elements, include the logic code within it as well. [Example](../Examples/Classes/encap_inher_poly_abst.py)
+
+### JSON and Dictionaries
+
+Since JSON requires double quotes for the key pair values and python dictionaries require a single quote for the key pairs, and we need to convert the boolean values to a python format, you can use `json.loads()` to provide the correct format.
+
+To convert a python dictionary to json formatting, you would use `json.dumps`. Functions cannot be converted to json format.
+
+[Example](../Examples/General/json_to_dict.py)
