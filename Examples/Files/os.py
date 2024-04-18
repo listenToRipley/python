@@ -32,3 +32,11 @@ print(f"{directory_path} is a directory? {is_dir}")
 dir_files = os.listdir(directory_path)
 for file in dir_files:
     print(file)
+
+
+# Remove directory
+if os.path.exists(directory_path):
+    for file in dir_files:
+        os.remove(os.path.join(directory_path, file))
+    os.rmdir(directory_path) # cannot be removed if the directory has files.
+    print(f"Directory {directory_path} was removed")
