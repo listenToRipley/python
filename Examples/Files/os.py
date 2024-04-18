@@ -27,3 +27,8 @@ is_dir  = os.path.isdir(directory_path)
 
 print(f"{file_path} is a file? {is_file}")
 print(f"{directory_path} is a directory? {is_dir}")
+
+# Listing Files in the the directory
+dir_files = os.listdir(directory_path)
+for file in dir_files:
+    print(file)
