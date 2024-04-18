@@ -1,13 +1,6 @@
 from os import path
 from pathlib import Path
 
-# os
-print(path.abspath('.'))
-# ~/Documents/GitHub/python/
-
-print(type(path))
-
-# pathlib
 print(Path('.').absolute())
 # ~/Documents/GitHub/python/
 
@@ -35,3 +28,7 @@ print(Path('other.py').exists())
 print(Path('os_pathlib.py').is_file())
 print(Path('../Files').is_file())
 print(Path('../Files').is_dir())
+
+# list of files and folders
+for f in Path('.').iterdir():
+    print(f)
