@@ -43,3 +43,5 @@ You can do this by using pathlib's unlink method.
 ## Zip Archives
 
 You do this through another built in module of `zipfile`.
+
+[Examples](../Examples/Files/zip_arch.py)
