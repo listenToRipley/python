@@ -39,3 +39,7 @@ The mode itself won't provide content to be created, it just shows what you will
 ### Removing
 
 You can do this by using pathlib's unlink method.
+
+## Zip Archives
+
+You do this through another built in module of `zipfile`.
