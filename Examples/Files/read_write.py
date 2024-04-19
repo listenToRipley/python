@@ -39,4 +39,6 @@ with open(file_path, 'w') as file:
     file.write("Second line \n")
 
 with open(file_path) as file:
-    print(file.read())
+    #read each lines of code
+    for line in file.readlines():
+        print(line)
