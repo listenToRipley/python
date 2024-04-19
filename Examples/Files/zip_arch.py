@@ -34,3 +34,5 @@ with ZipFile(zip_archive) as zip_file:
     print(zip_file.infolist())
     # unpack
     zip_file.extractall('Examples/Files/unzip_files')
+    # specific  files to extract
+    zip_file.extract(file_two, 'Examples/Files')
