@@ -25,3 +25,10 @@ print(type(file))
 
 file.write("First line\n")
 file.write("Second line \n")
+
+#now close
+file.close()
+
+#now you can read
+file = open(file_path)
+file.read()
