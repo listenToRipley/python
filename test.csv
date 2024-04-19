@@ -1,3 +1,3 @@
-user_id,user_name,comment_qty
-555,ripley,666
-444,author,42
+user_id;user_name;comment_qty
+555;ripley;666
+444;author;42
