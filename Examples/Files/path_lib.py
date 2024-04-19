@@ -35,12 +35,12 @@ from pathlib import Path
 directory_path = Path('my_test_directory')
 
 # Check if the directory exists
-# if not directory_path.exists():
-#     #create directory
-#     directory_path.mkdir()
-#     print(f"Directory was created : {directory_path}")
-# else:
-#     print(f"Directory already exists : {directory_path}")
+if not directory_path.exists():
+    #create directory
+    directory_path.mkdir()
+    print(f"Directory was created : {directory_path}")
+else:
+    print(f"Directory already exists : {directory_path}")
 
 # Create path to the file
 
