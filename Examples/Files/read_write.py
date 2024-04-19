@@ -40,5 +40,16 @@ with open(file_path, 'w') as file:
 
 with open(file_path) as file:
     #read each lines of code
-    for line in file.readlines():
-        print(line)
+    # for line in file.readlines():
+    #     print(line.strip())
+    while True:
+        line = file.readline()
+        if not line:
+            break
+        print(line.strip())
+
+with open(file_path, 'a') as file:
+    file.write("Third line\n")
+
+with open(file_path) as file:
+    print(file.read())
