@@ -30,3 +30,7 @@ with ZipFile('Examples/Files/zip-test.zip', mode='w') as zip_file:
 with ZipFile(zip_archive) as zip_file:
     print(zip_file)
     print(type(zip_file))
+    print(zip_file.compression)
+    print(zip_file.infolist())
+    # unpack
+    zip_file.extractall('Examples/Files/unzip_files')
