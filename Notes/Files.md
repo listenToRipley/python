@@ -35,3 +35,7 @@ Best practice is the create the path to the file you want to write to if it does
 The mode itself won't provide content to be created, it just shows what you will be doing in the file. You will provide the path, file name and the the method associated with the mode to use it.
 
 [Example](../Examples/Files/read_write.py)
+
+### Removing
+
+You can do this by using pathlib's unlink method.

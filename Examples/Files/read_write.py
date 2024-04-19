@@ -1,3 +1,5 @@
+from path_lib import Path
+
 # read
 
 # with open('test.txt') as test_file: #test_file is an object.
@@ -18,7 +20,7 @@
 # with open('new.txt') as new_file:
 #     print(new_file.read()) #output new file
 
-file_path = 'Examples/Files/my_file.txt'
+file_path = Path('Examples/Files/my_file.txt')
 # This is not ideal formatting
 # file = open(file_path, 'w')
 # print(file)
@@ -53,3 +55,7 @@ with open(file_path, 'a') as file:
 
 with open(file_path) as file:
     print(file.read())
+
+
+if file_path.exists():
+    file_path.unlink()
