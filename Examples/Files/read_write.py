@@ -30,11 +30,13 @@ file_path = 'Examples/Files/my_file.txt'
 # #now close
 # file.close()
 
+#now you can read
+# file = open(file_path)
+# print(file.read())
+
 with open(file_path, 'w') as file:
     file.write("First line\n")
     file.write("Second line \n")
 
-
-#now you can read
-file = open(file_path)
-print(file.read())
+with open(file_path) as file:
+    print(file.read())
