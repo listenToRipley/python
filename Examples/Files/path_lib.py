@@ -34,6 +34,10 @@ from pathlib import Path
 # Directory path
 directory_path = Path('my_test_directory')
 
+print(type(directory_path))
+
+print(Path.__subclasses__())
+
 # Check if the directory exists
 if not directory_path.exists():
     #create directory
@@ -43,5 +47,32 @@ else:
     print(f"Directory already exists : {directory_path}")
 
 # Create path to the file
+file_path = directory_path / 'my_file.txt'
+other_file_path = directory_path.joinpath('my_file.txt')
+print(f"File path is {file_path}")
 
 # Getting parent directory
+parent_dir = file_path.parent
+print(f" Parent directory {parent_dir}")
+
+#Checking if the file is file path or dir path
+is_file = file_path.is_file()
+is_dir = directory_path.is_dir()
+
+print(f"{file_path} is a file? {is_file} \n {directory_path} is a directory? {is_dir}")
+
+# Listing files in the directory through iteration
+
+files = [file for file in directory_path.iterdir()] 
+# can add .name to file to just get the file name
+files_detailed = [file.name for file in directory_path.iterdir() if file.is_file()]
+# to just return if there are files, not directories. 
+
+print(f"Files in the directory: {files}")
+
+# Remove directory
+if directory_path.exists():
+    files = [file for file in directory_path.iterdir()] 
+    for file in files:
+        file.unlink()        
+    directory_path.rmdir()

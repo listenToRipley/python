@@ -2,6 +2,8 @@
 
 Any py file is considered a module.
 
+*Do not name any files or directories the same as any built in modules, you will have issues.*
+
 ## Import
 
 you will use the keyword `import` to pull in a file. Export is not required to import a file.
