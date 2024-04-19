@@ -76,3 +76,4 @@ if directory_path.exists():
     for file in files:
         file.unlink()        
     directory_path.rmdir()
+    print(f"Directory: {directory_path}, was removed")
