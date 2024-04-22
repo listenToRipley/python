@@ -38,7 +38,7 @@ Some of these built in options are:
 
 - [os](./Files.md/#os)
 - [pathlib](./Files.md/#pathlib)
-- time
+- [time](./Modules.md/#datetime)
 - sys
 - math
 - smtplib
@@ -66,7 +66,7 @@ Create a folder, place your module files inside of the folder. Create a file cal
 
 [Example](../Examples/Modules/my_package/)
 
-### Datatime
+### Datetime
 
 This import creates objects for date and time.
 
@@ -75,3 +75,9 @@ This import creates objects for date and time.
 [Official docs](https://docs.python.org/3/library/datetime.html)
 
 You can use module `time` to measure how much time it takes to run some
+
+### Random
+
+Provides different options.
+
+[Example](../Examples/Modules/random_run.py)
