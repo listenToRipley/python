@@ -48,7 +48,7 @@ Some of these built in options are:
 - pprint
 - calendar
 - regex
-- random
+- [random](./Modules.md/#random)
 
 You can use `help` to see information about these built in functions.
 
@@ -81,3 +81,8 @@ You can use module `time` to measure how much time it takes to run some
 Provides different options.
 
 [Example](../Examples/Modules/random_run.py)
+
+
+### Secrets
+
+[Examples](../Examples/Modules/secerts_mod.py)

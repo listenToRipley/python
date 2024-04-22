@@ -30,6 +30,7 @@ print(f"Choices : {random.choices('whatdoyouwant', k=7)}")
 print(f"Not best practice to make a password : {''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', k=12))}")
 
 # sample - promises unique elements
+# sample removes elements from the list so you only have one time.
 print(f"Sample: {random.sample([1,2,3,4,5,6,7,8], k=3)}") # k cannot exceed the length of the element provided.
 print(f"Sample password, not greate either : {''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', k=12))}")
 print(random.sample([1,1,1,1,1], k=3)) # this won't produce an error since each values is treated as a unique item.
