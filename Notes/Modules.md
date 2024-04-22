@@ -65,3 +65,7 @@ This is part of the directory system and allows you to see what document you are
 Create a folder, place your module files inside of the folder. Create a file called `__init__.py` in the folder. Import the modules into the file and provide a description of what this package does. If you wanted to register this package for public use, you could do so at [pypi](www.pypi.org).
 
 [Example](../Examples/Modules/my_package/)
+
+### Datatime
+
+[Example](../Examples/Modules/date_time.py)
