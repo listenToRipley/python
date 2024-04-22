@@ -82,7 +82,6 @@ Provides different options.
 
 [Example](../Examples/Modules/random_run.py)
 
-
 ### Secrets
 
 [Examples](../Examples/Modules/secerts_mod.py)
