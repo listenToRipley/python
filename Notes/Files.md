@@ -75,3 +75,7 @@ To see the activity of the server, you can use `docker log container_id`. This w
 Create an [HTML file](../Examples/Files/templates/template.html)
 
 You will then use the modules `Template` and `Path` to specific the location and format of your document. You can pass the values you used as marker through `$` and then process email as you would other email.
+
+## SQLite
+
+[Example](../Examples/Files/sqllite.py)
