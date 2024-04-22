@@ -2,6 +2,8 @@
 
 Any py file is considered a module.
 
+*Do not name any files or directories the same as any built in modules, you will have issues.*
+
 ## Import
 
 you will use the keyword `import` to pull in a file. Export is not required to import a file.
@@ -36,17 +38,18 @@ Some of these built in options are:
 
 - [os](./Files.md/#os)
 - [pathlib](./Files.md/#pathlib)
-- time
+- [time](./Modules.md/#datetime)
 - sys
-- math
+- [math](../Examples/Modules/math_mod.py)
 - smtplib
 - zipfile
 - csv
 - statistics
 - pprint
 - calendar
-- regex
-- random
+- [regex](../Examples/Modules/reg_exp.py)
+- [random](../Examples/Modules/random_run.py)
+- [secrets](../Examples/Modules/secerts_mod.py)
 
 You can use `help` to see information about these built in functions.
 
@@ -63,3 +66,17 @@ This is part of the directory system and allows you to see what document you are
 Create a folder, place your module files inside of the folder. Create a file called `__init__.py` in the folder. Import the modules into the file and provide a description of what this package does. If you wanted to register this package for public use, you could do so at [pypi](www.pypi.org).
 
 [Example](../Examples/Modules/my_package/)
+
+### Datetime
+
+This import creates objects for date and time.
+
+[Example](../Examples/Modules/date_time.py)
+
+[Official docs](https://docs.python.org/3/library/datetime.html)
+
+You can use module `time` to measure how much time it takes to run some
+
+### SMTP
+
+This example used the [docker container smtp4dev](https://github.com/rnwood/smtp4dev) as a server.
