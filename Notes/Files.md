@@ -51,3 +51,14 @@ You do this through another built in module of `zipfile`.
 Comma seperated values.
 
 [Examples](../Examples/Files/csvs.py)
+
+## Sending Emails
+
+[The example](../Examples/Files/emails.py), will not work unless you have the [smtp](./Files.md/#smtp) running before you start this.
+
+You should see on your localhost the email sent once the code is run.
+
+### SMTP
+
+This example used the [docker container smtp4dev](https://github.com/rnwood/smtp4dev) as a server. This allows us to run sample emails from this docker server simulation.
+

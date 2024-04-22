@@ -77,6 +77,4 @@ This import creates objects for date and time.
 
 You can use module `time` to measure how much time it takes to run some
 
-### SMTP
 
-This example used the [docker container smtp4dev](https://github.com/rnwood/smtp4dev) as a server.
