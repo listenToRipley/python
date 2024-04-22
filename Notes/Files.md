@@ -54,6 +54,8 @@ Comma seperated values.
 
 ## Sending Emails
 
+We are using the module [EmailMessage](https://docs.python.org/3/library/email.message.html) for this work.
+
 [The example](../Examples/Files/emails.py), will not work unless you have the [smtp](./Files.md/#smtp) running before you start this.
 
 You should see on your localhost the email sent once the code is run.
@@ -62,3 +64,12 @@ You should see on your localhost the email sent once the code is run.
 
 This example used the [docker container smtp4dev](https://github.com/rnwood/smtp4dev) as a server. This allows us to run sample emails from this docker server simulation.
 
+To start container run `docker run --rm -it -d -p 3000:80 -p 2525:25 rnwood/smtp4dev`
+
+To verify you container is running from the terminal, you can see it through `docker ps`
+
+To see the activity of the server, you can use `docker log container_id`. This will include messages sent through the server.
+
+#### Formatting for HTML
+
+Create an [HTML file](../Examples/Files/templates/template.html)
