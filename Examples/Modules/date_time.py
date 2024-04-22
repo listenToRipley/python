@@ -1,5 +1,5 @@
 # import datetime
-from datetime import datetime
+from datetime import datetime, timedelta
 # future_date = datetime.date(2222, 9,20)
 # print(f"Future date: {future_date}")
 
@@ -32,3 +32,16 @@ format_datetime_str = "3000-11-20 14:25:45"
 parsed_datetime = datetime.strptime(format_datetime_str, "%Y-%m-%d %H:%M:%S")
 print(parsed_datetime)
 print(parsed_datetime.year)
+
+parsed_date = datetime.strptime("June 30, 2050", "%B %d, %Y")
+print(parsed_date)
+
+parsed_time = datetime.strptime("10:12 AM", "%I:%M %p")
+print(parsed_time)
+
+#add data to object
+# add time
+print(new_future_datetime + timedelta(days=100, hours=3, minutes=50))
+# subtract time 
+
+print(new_future_datetime - timedelta(days=365, hours=23, minutes=50))
