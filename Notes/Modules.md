@@ -40,7 +40,7 @@ Some of these built in options are:
 - [pathlib](./Files.md/#pathlib)
 - [time](./Modules.md/#datetime)
 - sys
-- math
+- [math](../Examples/Modules/math_mod.py)
 - smtplib
 - zipfile
 - csv
@@ -48,7 +48,8 @@ Some of these built in options are:
 - pprint
 - calendar
 - regex
-- [random](./Modules.md/#random)
+- [random](../Examples/Modules/random_run.py)
+- [secrets](../Examples/Modules/secerts_mod.py)
 
 You can use `help` to see information about these built in functions.
 
@@ -75,13 +76,3 @@ This import creates objects for date and time.
 [Official docs](https://docs.python.org/3/library/datetime.html)
 
 You can use module `time` to measure how much time it takes to run some
-
-### Random
-
-Provides different options.
-
-[Example](../Examples/Modules/random_run.py)
-
-### Secrets
-
-[Examples](../Examples/Modules/secerts_mod.py)
