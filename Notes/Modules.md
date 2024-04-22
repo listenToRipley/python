@@ -71,3 +71,5 @@ Create a folder, place your module files inside of the folder. Create a file cal
 This import creates objects for date and time.
 
 [Example](../Examples/Modules/date_time.py)
+
+[Official docs](https://docs.python.org/3/library/datetime.html)

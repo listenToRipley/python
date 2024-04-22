@@ -19,3 +19,16 @@ new_future_datetime = datetime(2100, 10,12,20,55,15)
 print(f"Future date and time {new_future_datetime}")
 
 print(dir(new_future_datetime))
+
+# change format
+print(f"Format date: {new_future_datetime.strftime("%B %d, %Y")}")
+print(f"Format time: {new_future_datetime.strftime("%I:%M %p")}")
+print(f"Format date and time: {new_future_datetime.strftime("%A, %B %d, %Y %I:%M %p")}")
+
+# from string to formatted time 
+
+format_datetime_str = "3000-11-20 14:25:45"
+
+parsed_datetime = datetime.strptime(format_datetime_str, "%Y-%m-%d %H:%M:%S")
+print(parsed_datetime)
+print(parsed_datetime.year)
