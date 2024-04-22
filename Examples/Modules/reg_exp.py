@@ -21,3 +21,8 @@ print(type(new_pattern))
 print(new_pattern.search(my_string))
 print(new_pattern.search("we need Naature now."))
 print(new_pattern.findall("My name is Natalie. Say hello to Naature!!"))
+
+email_regexp = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+email_pattern = re.compile(email_regexp)
+
+print(email_pattern.match('a.dent@example.com'))
