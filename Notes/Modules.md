@@ -73,3 +73,5 @@ This import creates objects for date and time.
 [Example](../Examples/Modules/date_time.py)
 
 [Official docs](https://docs.python.org/3/library/datetime.html)
+
+You can use module `time` to measure how much time it takes to run some

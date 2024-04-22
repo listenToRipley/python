@@ -1,5 +1,6 @@
 # import datetime
 from datetime import datetime, timedelta
+import time 
 # future_date = datetime.date(2222, 9,20)
 # print(f"Future date: {future_date}")
 
@@ -45,3 +46,20 @@ print(new_future_datetime + timedelta(days=100, hours=3, minutes=50))
 # subtract time 
 
 print(new_future_datetime - timedelta(days=365, hours=23, minutes=50))
+
+### TIME module
+current_time_in_seconds = time.time()
+print(time.ctime(current_time_in_seconds))
+
+# seconds time date time
+print(time.ctime(23423423423))
+
+start_time = time.time()
+# print(f"Start {start_time}")
+# time.sleep(3)
+# my_range = range(10_000_000)
+my_list = list(range(100_000_000))
+end_time = time.time()
+# print(f"Continue: {end_time}")
+
+print(f"Time spend : {round(end_time - start_time,2)}")
