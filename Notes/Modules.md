@@ -47,7 +47,7 @@ Some of these built in options are:
 - statistics
 - pprint
 - calendar
-- regex
+- [regex](../Examples/Modules/reg_exp.py)
 - [random](../Examples/Modules/random_run.py)
 - [secrets](../Examples/Modules/secerts_mod.py)
 
