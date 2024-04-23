@@ -28,15 +28,27 @@ DB_NAME = 'sqlite_db.db'
 
 
 # add multiple records  to the table.
-courses = [
-  (252, "Intro to JavaScript", 100, 30),
-  (351, "Understanding Algorithms", 50, 25),
-  (773, "Getting to Know Node.js", 75, 50),
-  (101, "How to Rubber Duck", 5, 90)
-]
+# courses = [
+#   (252, "Intro to JavaScript", 100, 30),
+#   (351, "Understanding Algorithms", 50, 25),
+#   (773, "Getting to Know Node.js", 75, 50),
+#   (101, "How to Rubber Duck", 5, 90)
+# ]
 
+# with sqlite3.connect(DB_NAME) as sqlite_conn:
+#   sql_request = " INSERT INTO courses VALUES (?,?,?,?)" # ? are placeholders
+#   for course in courses:
+#     sqlite_conn.execute(sql_request, course)
+#   sqlite_conn.commit() # run the requests
+
+# Reading data from the database.
 with sqlite3.connect(DB_NAME) as sqlite_conn:
-  sql_request = " INSERT INTO courses VALUES (?,?,?,?)" # ? are placeholders
-  for course in courses:
-    sqlite_conn.execute(sql_request, course)
-  sqlite_conn.commit() # run the requests
+  sql_request = "SELECT * FROM courses WHERE reviews_qrt>30"
+  sql_cursor = sqlite_conn.execute(sql_request)
+  # for record in sql_cursor: # can unpack
+  #   id, title, student_qty, review_qty = record
+  #   print(record)
+  #   print(id)
+
+  records = sql_cursor.fetchall() # returns EVERYTHING
+  print(records)
