@@ -95,7 +95,7 @@ If you want to read from a binary file, you will have to create an empty array w
 
 ### sys
 
-Sys is for system arguments. These are values that are stored within the python application itself.
+Sys is for system arguments. These are values that are stored within the python application itself. You can also get information about your application and system.
 
 They are passed through the file item, it looks something like `python3 main.py username password`
 

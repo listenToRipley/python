@@ -11,3 +11,7 @@ if len(sys.argv) < 3:
 _, username, password = sys.argv
 
 print(f"Username: {username} \nPassword: {password}")
+
+print(sys.version_info)
+print(sys.version)
+print(sys.base_prefix)
