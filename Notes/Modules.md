@@ -83,4 +83,6 @@ This function very similar to list and tuples. You specify the type of array you
 
 If the values you are trying to append to the array are not of the type, an error will occur and you will not be added to the list; unless, the value can be converted to that type.
 
+The path provided for read and write are absolute.
+
 [Example](../Examples/Modules/array_mod.py)
