@@ -39,9 +39,9 @@ Some of these built in options are:
 - [os](./Files.md/#os)
 - [pathlib](./Files.md/#pathlib)
 - [time](./Modules.md/#datetime)
-- sys
+- [sys]()
 - [math](../Examples/Modules/math_mod.py)
-- smtplib
+- [smtplib](../Notes/Files.md/#smtp)
 - zipfile
 - csv
 - statistics
@@ -92,3 +92,13 @@ The path provided for read and write are absolute.
 The files are usually saved as binary.
 
 If you want to read from a binary file, you will have to create an empty array where the values can be stored until read.
+
+### sys
+
+Sys is for system arguments. These are values that are stored within the python application itself.
+
+They are passed through the file item, it looks something like `python3 main.py username password`
+
+If not agr are passed, then just the file name will be your agr.
+
+[Example](../Examples/Modules/sys_mod.py)
