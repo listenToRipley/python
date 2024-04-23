@@ -1,5 +1,13 @@
 # Files
 
+## PIP
+
+Package manager for python.
+
+See the version you current have for linux `pip3 --version` for windows `pip --version`
+
+To see all the package available on your computer, `pip3 list` on linux and `pip list` for windows.
+
 ## Built in Modules
 
 ### os
