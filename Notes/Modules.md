@@ -102,3 +102,7 @@ They are passed through the file item, it looks something like `python3 main.py 
 If not agr are passed, then just the file name will be your agr.
 
 [Example](../Examples/Modules/sys_mod.py)
+
+### webbrowser
+
+[Example](../Examples/Modules/web_browser.py)
