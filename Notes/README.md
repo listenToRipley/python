@@ -5,6 +5,7 @@
 - [Classes](./Classes.md)
 - [Modules](./Modules.md)
 - [Files](./Files.md)
+- [Virtual Environments](./VirtualEnv.md)
 
 ## General Notes
 
