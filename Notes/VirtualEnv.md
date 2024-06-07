@@ -56,4 +56,12 @@ This will create the venv and activate it, so additional commands will not be re
 
 There should now see file Pipfile creates.
 
+If you need to see which virtual environment is currently being used, you can run `pipenv --venv`
 
+You can also use `pipenv --where` to see the physical path or `which python` to see the virtual location.
+
+To see the dependencies inside this environment, you can use `pip list` or `pipenv graph`
+
+#### Install packages
+
+Instead of using the `pip install`, we want to use `pipenv install` to ensure that our pipenv files is updated for any changes. 
