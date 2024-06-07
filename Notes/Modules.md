@@ -4,6 +4,8 @@ Any py file is considered a module.
 
 *Do not name any files or directories the same as any built in modules, you will have issues.*
 
+To go over how this might be managed on a project, [review virtual environments](./VirtualEnv.md)
+
 ## Import
 
 you will use the keyword `import` to pull in a file. Export is not required to import a file.
@@ -66,6 +68,8 @@ This is part of the directory system and allows you to see what document you are
 Create a folder, place your module files inside of the folder. Create a file called `__init__.py` in the folder. Import the modules into the file and provide a description of what this package does. If you wanted to register this package for public use, you could do so at [pypi](www.pypi.org).
 
 [Example](../Examples/Modules/my_package/)
+
+If you want/ need to install a specific version, you can find the different releases under, "release history" on the package pack. You will then run `pip install packagename==#.#.#`
 
 ### Datetime
 

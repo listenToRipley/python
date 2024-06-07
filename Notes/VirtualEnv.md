@@ -10,6 +10,8 @@ The second `venv` is the name of the folder. It is best practice to keep it unde
 
 This folder will contain all required files to run a python application will be included inside of the venv folder.
 
+If you have questions about package/modules, [review modules](./Modules.md)
+
 ## Activate
 
 From your main folder run, `source venv/bin/activate`
@@ -60,7 +62,7 @@ If you need to see which virtual environment is currently being used, you can ru
 
 You can also use `pipenv --where` to see the physical path or `which python` to see the virtual location.
 
-To see the dependencies inside this environment, you can use `pip list` or `pipenv graph`
+To see the dependencies inside this environment, you can use `pip list` or `pipenv graph`. Graph will provide the same as list, but in a tree format which will make it easier to read and outlines the dependence requirements and installed version.
 
 #### Install packages
 
