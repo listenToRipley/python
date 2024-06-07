@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 requests = "*"
-pandas = "==1.5.3"
+pandas = "*"
 
 [dev-packages]
 

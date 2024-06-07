@@ -62,8 +62,26 @@ If you need to see which virtual environment is currently being used, you can ru
 
 You can also use `pipenv --where` to see the physical path or `which python` to see the virtual location.
 
-To see the dependencies inside this environment, you can use `pip list` or `pipenv graph`. Graph will provide the same as list, but in a tree format which will make it easier to read and outlines the dependence requirements and installed version.
+To see the dependencies inside this environment, you can use `pip list` or `pipenv freeze` or `pipenv graph`. Graph will provide the same as list, but in a tree format which will make it easier to read and outlines the dependence requirements and installed version.
+
+To exit, use run `exit`
+
+This virtual environment will persist, which you can see by running `pipenv --venv`. To remove it, run `rm -rf /path/name/of/env`
 
 #### Install packages
 
-Instead of using the `pip install`, we want to use `pipenv install` to ensure that our pipenv files is updated for any changes. 
+Instead of using the `pip install package_name`, we want to use `pipenv install package_name` to ensure that our pipenv files is updated for any changes. 
+
+#### Updating packages 
+
+You can run `pipenv update package_name`
+
+#### Create venv inside project
+
+`mkdir .venv` and run `pipenv install`, this will create a hidden folder where all your venv content will be located. 
+
+To see the files created run ` pipenv --venv`.
+
+Then launch the venv, `pipenv shell`
+
+When nested this way, this they will share packages and dependencies from the parent folder, but everything will execute from .venv/bin
