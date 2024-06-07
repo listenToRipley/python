@@ -40,6 +40,8 @@ This will not remove dependencies that were included with that package, so be ve
 
 ### PIPENV
 
+This is the best practice and you can ignore the steps previously to set up your new env. To view an example file, [go here](../pipenv_project/)
+
 If you just you a requirements doc, then this can easily out of sync with any added items. We want your dependencies list to always stay updated with any changes.
 
 One of the most popular solutions to this problem is [pipenv](https://pypi.org/project/pipenv/)
@@ -53,3 +55,5 @@ Once installed, inside your file, run `pipenv shell`
 This will create the venv and activate it, so additional commands will not be required.
 
 There should now see file Pipfile creates.
+
+
