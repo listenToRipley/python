@@ -9,6 +9,8 @@
 
 ## General Notes
 
+If you see a variable with all caps, then it indicates that the variable's value is set before a programs starts remain constant throughout the running of the program; therefore; those values should not be changed throughout the life cycle of the application.
+
 ### Encapsulation
 
 Attributes and scope is specified within a singular function or object. [Example](../Examples/Classes/encap_inher_poly_abst.py)
