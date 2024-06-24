@@ -2,6 +2,8 @@
 
 [Official docs](https://www.djangoproject.com/)
 
+For notes about the specifics of the [example project review this README](../Examples/django_proj/README.md)
+
 Django is a MVC system by which you can create and manage your content; however; instead of this being MVC in django, this is known as MTV.
 
 Django is made up of applications and middleware included in the original installation. You can see all that are included in this structure by review [settings](../Examples/django_proj/base/settings.py). This applications and middleware are starting point and they can be modified or new ones added.
@@ -26,7 +28,9 @@ The manage.py file s the "django's command-line utility for administrative tasks
 
 ### Start Server
 
-Inside of your `pipenv shell` run `python manage.py runserver`
+Inside of your `pipenv shell` 
+
+Then run `python manage.py runserver`
 
 ## General Info
 
@@ -37,3 +41,7 @@ ASGI - Asynchronous Server Gateway Interface, this is the alternative to WSGI an
 ### Best Practices
 
 The "DEBUG" variable is base settings should be changed to false once the application is push to production.
+
+#### Base
+
+Since application/packages will be stored on the same level, we need a base of operations for the general requested/starting information for a Django project. Using the name base makes this easy to identify that folder.
