@@ -52,11 +52,15 @@ What is included in this newly created packages and what do they do?
 
 *Folder*
 
-- Migrations
+##### Migrations
 
 Contains an __init__ file.
 
-*Files*
+The items hav been automatically enabled are the `INSTALLED_APPS` in your [settings](../Examples/django_proj/base/settings.py). This items will need to have data in the database.
+
+While you pipenv shell is running, go to a new terminal window inside your project and run `python manage.py migrate`
+
+##### Files
 
 - __init__
 
@@ -95,6 +99,10 @@ This we need to add this package urls to the base urls by using the includes fun
 WSGI - Web Server Gateway Interface, this application is responsible for serving the rest of our application to the web and different end clients, (ex. ngix or apache). This is the default option. 
 
 ASGI - Asynchronous Server Gateway Interface, this is the alternative to WSGI and is included in your Django package, but is turned off by default.
+
+### Database
+
+The database relationship is outlined in the [settings document](../Examples/django_proj/base/settings.py)
 
 ### Best Practices
 
