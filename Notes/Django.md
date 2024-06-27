@@ -58,7 +58,7 @@ Contains an __init__ file.
 
 The items hav been automatically enabled are the `INSTALLED_APPS` in your [settings](../Examples/django_proj/base/settings.py). This items will need to have data in the database.
 
-While you pipenv shell is running, go to a new terminal window inside your project and run `python manage.py migrate`
+While you pipenv shell is running, go to a new terminal window inside your project and run `python manage.py migrate`, this will apply all items lists in your variable above.
 
 ##### Files
 
