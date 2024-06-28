@@ -58,7 +58,7 @@ Contains an __init__ file.
 
 The items hav been automatically enabled are the `INSTALLED_APPS` in your [settings](../Examples/django_proj/base/settings.py). This items will need to have data in the database.
 
-While you pipenv shell is running, go to a new terminal window inside your project and run `python manage.py migrate`, this will apply all items lists in your variable above.
+While you pipenv shell is running, go to a new terminal window inside your project and run `python manage.py migrate`, this will apply all items lists in your variable above. Now if you refresh your database you should see all data fields created for this db.
 
 ##### Files
 
@@ -76,7 +76,19 @@ A class that contains attributes of the package, it will be the package name plu
 
 - models
 
-This is where your [models](./Django.md/#model) that will interact with your database will be stored. 
+This is where your [models](./Django.md/#model) that will interact with your database will be stored.
+
+These models exist as a representation of a singular record in the database. It is best practice to not use plurals when naming these elements.
+
+These elements are stored as an extended classes of `models.Model`. 
+
+Think of the class name a the table name and the attributes as the columns for that table. Since the attributes will be the columns, the values are going to be their storage values, the type of data we will be retaining and any additional parameters associated with those value, (how long it can be, if it has a default etc...) Some of these models values will require additional imports to provide the correct functionality.
+
+To create a relationship between two models, you can use `models.ForeignKey(ClassName)`
+
+You may want to use `on_delete=models.CASCADE`, which means if the class name is ever removed, then so will all associated courses.
+
+[Review classes for additional questions](./Classes.md)
 
 - tests
 

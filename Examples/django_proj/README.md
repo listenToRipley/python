@@ -18,6 +18,12 @@ Created by running `python manage.py startapp shop`
 
 This created a [folder](./shop/) where this application will be stored, this is considered a package.
 
+#### Model
+
+Inside the shop, we will have categories and courses. The relationship will be one to many, the one being the categories and the courses being the many.
+
+Review [models for general questions](../../Notes/Django.md/#model)
+
 ### API
 
 Responsible for client requests via JSON formatting.
@@ -30,9 +36,24 @@ To see the contents of this file, you will download and open [sqlite browser](ht
 
 You can find more information about the [sqlite3 interface here](https://docs.python.org/3/library/sqlite3.html)
 
-To create data in the database, migration will need to be applied. For new project  you may have seen the warning ```
+To create data in the database, migration will need to be applied. For new project  you may have seen the warning 
+
+```
 You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
 Run 'python manage.py migrate' to apply them.
 ``` 
 
 [Review notes here for additional questions regarding migrations](../../Notes/Django.md/#migrations)
+
+## Admin
+
+To create access run `python manage.py createsuperuser`
+
+You should now be able to login to the admin dashboard for Django. You will see Groups and Users.
+
+## Trouble shooting
+
+If you have any issues with any of these steps check the following:
+
+- Is your pipenv shell running?
+- Have you pushed all recent changed to git?
