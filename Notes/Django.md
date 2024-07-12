@@ -70,17 +70,17 @@ After your changes have been applied, restart your server and you will need to a
 
 Empty file.
 
-- admin
+###### admin
 
 Where models are registered to perform administrative tasks.
 
-- apps
+######  apps
 
 A class that contains attributes of the package, it will be the package name plus "Config"
 
-- models
+######  models
 
-This is where your [models](./Django.md/#model) that will interact with your database will be stored.
+This is where your models that will interact with your database will be stored.
 
 These models exist as a representation of a singular record in the database. It is best practice to not use plurals when naming these elements.
 
@@ -97,11 +97,11 @@ For items to be appear in the database that has been provided in the model, veri
 
 [Review classes for additional questions](./Classes.md)
 
-- tests
+###### tests
 
 Where your test cases will be stored.
 
-- views 
+###### views 
 
 This is your controllers that will connect your [view with models.](#view), this is where all our logic for sending and receiving requests between the models and the client templates.
 
@@ -121,7 +121,7 @@ ASGI - Asynchronous Server Gateway Interface, this is the alternative to WSGI an
 
 ### Database
 
-The database relationship is outlined in the [settings document](../Examples/django_proj/base/settings.py), but in order to add content to your database from your application, you will need to set up [models](#model) and include [migrations](#migrations) so all elements can interact.
+The database relationship is outlined in the [settings document](../Examples/django_proj/base/settings.py), but in order to add content to your database from your application, you will need to set up [models](#models) and include [migrations](#migrations) so all elements can interact.
 
 ### Best Practices
 
