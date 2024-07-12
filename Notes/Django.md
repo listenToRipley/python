@@ -60,7 +60,7 @@ The items hav been automatically enabled are the `INSTALLED_APPS` in your [setti
 
 While you pipenv shell is running, go to a new terminal window inside your project and run `python manage.py migrate`, this will apply all items lists in your variable above. Now if you refresh your database you should see all data fields created for this db.
 
-After you have complete the [models setup](#model), then you would run `python manage.py makemigrations` and django will take take of the migration requirements.
+After you have complete the [models setup](#model), then you would run `python manage.py makemigrations` and django will take take of the migration requirements. You should see in the terminal that specific magrations were created and added to the migrations folder.
 
 ##### Files
 
