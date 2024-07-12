@@ -49,11 +49,4 @@ Run 'python manage.py migrate' to apply them.
 
 To create access run `python manage.py createsuperuser`
 
-You should now be able to login to the admin dashboard for Django. You will see Groups and Users.
-
-## Trouble shooting
-
-If you have any issues with any of these steps check the following:
-
-- Is your pipenv shell running?
-- Have you pushed all recent changed to git?
+You should now be able to lo
