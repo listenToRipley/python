@@ -23,6 +23,8 @@ Inside the shop, we will have categories and courses. The relationship will be o
 
 Review [models for general questions](../../Notes/Django.md/#models)
 
+The categories to courses is a one to many relationship.
+
 ### API
 
 Responsible for client requests via JSON formatting.
@@ -43,6 +45,8 @@ Run 'python manage.py migrate' to apply them.
 ``` 
 
 [Review notes here for additional questions regarding migrations](../../Notes/Django.md/#migrations)
+
+Keep in mind that since we are using Category as the foreign key, elements can be set through the use of the primary key, [see here for examples](../../Notes/Django.md/#database)
 
 ## Admin
 

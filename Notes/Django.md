@@ -64,6 +64,8 @@ After you have complete the [models setup](#model), then you would run `python m
 
 After your changes have been applied, restart your server and you will need to apply the newly created content to be migrated by running `python manage.py migrate`. After this has been applied, you should now see the content in the database.
 
+Don't modify the file name that are automatically generated.
+
 ##### Files
 
 ###### __init__
@@ -122,13 +124,44 @@ WSGI - Web Server Gateway Interface, this application is responsible for serving
 
 ASGI - Asynchronous Server Gateway Interface, this is the alternative to WSGI and is included in your Django package, but is turned off by default.
 
+If you want to run anything through the python interpreter, you can use `python manage.py shell` to launch it.
+
 ### Database
 
 The database relationship is outlined in the [settings document](../Examples/django_proj/base/settings.py), but in order to add content to your database from your application, you will need to set up [models](#models) and include [migrations](#migrations) so all elements can interact.
 
+#### Creating Data
+
+##### via Shell
+
+Running the python interpreter inside of the document, you would import the [models](#models) you want to use and create a new class, it would look something like this:
+
+```python
+from shop.models import Category
+
+new_category = Category(title='Programming')
+new_category.save()
+
+category = Category.objects.get(pk=1)
+
+category.course_set.create(title="Complete Python Guide", price=0.99, students_qty=100, reviews_qty=30)
+
+category.course_set.all()
+```
+
+The method save is what will push your content to be added to the database.
+
+If you wanted to see all data the currently exists in the terminal, you can run `ClassName.objects.all()`. Make use the class has been imported like Category above. This will return the number of entries, not details of the content. You should be able to access the content by using dot notation. 
+
+To find a specific entry, you can use `ClassName.objects.get(pk=#)`. "pk" being your Primary Key. You could then assign it to a variable and access the content via dot notation. You don't have to use "pk", you could use any column header for that table and even use dot notation to return different content that would match. 
+
+You could filter by running `ClassName.objects.filter(pk=#)`. Filter does offer some arguments such as `columnName__containing="*"`
+
 ### Best Practices
 
 The "DEBUG" variable is base settings should be changed to false once the application is push to production.
+
+Don't modify models once you have data in your database.
 
 #### Base
 
