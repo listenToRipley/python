@@ -62,7 +62,7 @@ While you pipenv shell is running, go to a new terminal window inside your proje
 
 After you have complete the [models setup](#model), then you would run `python manage.py makemigrations` and django will take take of the migration requirements. You should see in the terminal that specific migrations were created and added to the migrations folder. This file will help format requests that will be sent to the database.
 
-After your changes have been applied, restart your server and you will need to apply the newly created content to be migrated by running `python manage.py migrate`
+After your changes have been applied, restart your server and you will need to apply the newly created content to be migrated by running `python manage.py migrate`. After this has been applied, you should now see the content in the database.
 
 ##### Files
 
@@ -121,7 +121,7 @@ ASGI - Asynchronous Server Gateway Interface, this is the alternative to WSGI an
 
 ### Database
 
-The database relationship is outlined in the [settings document](../Examples/django_proj/base/settings.py)
+The database relationship is outlined in the [settings document](../Examples/django_proj/base/settings.py), but in order to add content to your database from your application, you will need to set up [models](#model) and include [migrations](#migrations) so all elements can interact.
 
 ### Best Practices
 
