@@ -48,7 +48,7 @@ Keep in mind, you will not be able to view this package contents until it has be
 
 #### New Package Items
 
-What is included in this newly created packages and what do they do? 
+What is included in this newly created packages and what do they do? And should be done once they are created?
 
 *Folder*
 
@@ -66,7 +66,7 @@ After your changes have been applied, restart your server and you will need to a
 
 ##### Files
 
-- __init__
+###### __init__
 
 Empty file.
 
@@ -94,8 +94,11 @@ You may want to use `on_delete=models.CASCADE`, which means if the class name is
 
 For items to be appear in the database that has been provided in the model, verify that the configuration has included in your [apps.py](../Examples/django_proj/shop/apps.py) for the associated application, you will need to add that configuration class name to your the INSTALLED_APP section of the [setting.py file](../Examples/django_proj/base/settings.py). The format for the direction to this will be the `folder.file.class`. After these changes have been made, make sure you restart your server.
 
-
 [Review classes for additional questions](./Classes.md)
+
+*__Modifying models__*
+
+If you need to make changes to the content of your database, make alterations to your models file and then you will need to run [migrations again](#migrations)
 
 ###### tests
 

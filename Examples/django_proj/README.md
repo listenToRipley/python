@@ -6,7 +6,6 @@ This document will go over specific for this project and not [Django general fun
 
 Make sure you have your [pipenv running](../../Notes/Django.md/#setup).
 
-
 This project contains the following applications:
 
 ### Shop
@@ -22,7 +21,7 @@ This created a [folder](./shop/) where this application will be stored, this is 
 
 Inside the shop, we will have categories and courses. The relationship will be one to many, the one being the categories and the courses being the many.
 
-Review [models for general questions](../../Notes/Django.md/#model)
+Review [models for general questions](../../Notes/Django.md/#models)
 
 ### API
 
