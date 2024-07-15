@@ -110,6 +110,14 @@ Where your test cases will be stored.
 
 This is your controllers that will connect your [view with models.](#view), this is where all our logic for sending and receiving requests between the models and the client templates.
 
+You will create your views as http responses, but in order to make management of your views easier, you will need to create a [templates folder.](#templates)
+
+Once your [templates](#templates) have been added, you will use django shortcuts to render your content by passing in that template, [see example here](../Examples/django_proj/shop/views.py). 
+
+The direct path to your template does not have to be specified since it should exist inside the same parent folder. The reason django knows this is since it is specified in the [setting](../Examples/django_proj/base/settings.py) under `TEMPLATES` since the `'APP_DIRS': True`. This would be a good place to check if you are having issues with your content not appearing.
+
+To pass content to your template, use will pass it as a dictionary.
+
 ### Enable Package
 
 You will need to add your views and [create a url paths specific to the package.](../Examples/django_proj/shop/urls.py)
@@ -164,6 +172,14 @@ You could filter by running `ClassName.objects.filter(pk=#)`. Filter does offer 
 You will need to [import models in the admin file](../Examples/django_proj/shop/admin.py) through the files included in your models file. Once your have completed the registration, then you should be able to refresh your application page and see the items listed on the admin page. You should be able to add, edit and delete all items that exist in the database through this interface.
 
 To change the name/titles displayed in the admin site, you need to provide a method to your [model class](../Examples/django_proj/shop/models.py) that will return the associated name/title you want returned inside of the object quantity.
+
+### Templates
+
+Inside your application, you will create a [templates folder](../Examples/django_proj/shop/templates/), where you will store your content for display. This will need to be linked back to your [views](#views) in order for the content to be assessed in your application. 
+
+If you have data that needs to be based, it will be done in your view via dictionaries. 
+
+To use the passed data, you will [use django template formatting.](https://docs.djangoproject.com/en/5.0/ref/templates/language/).
 
 ### Best Practices
 

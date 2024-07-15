@@ -2,6 +2,8 @@
 
 This document will go over specific for this project and not [Django general functionality notes](../../Notes/Django.md)
 
+If you are using VSCode, you can install [Django Templates](https://marketplace.visualstudio.com/items?itemName=bibhasdn.django-html) to make template work easier.
+
 ## Setup
 
 Make sure you have your [pipenv running](../../Notes/Django.md/#setup).
