@@ -163,6 +163,8 @@ You could filter by running `ClassName.objects.filter(pk=#)`. Filter does offer 
 
 You will need to [import models in the admin file](../Examples/django_proj/shop/admin.py) through the files included in your models file. Once your have completed the registration, then you should be able to refresh your application page and see the items listed on the admin page. You should be able to add, edit and delete all items that exist in the database through this interface.
 
+To change the name/titles displayed in the admin site, you need to provide a method to your [model class](../Examples/django_proj/shop/models.py) that will return the associated name/title you want returned inside of the object quantity.
+
 ### Best Practices
 
 The "DEBUG" variable is base settings should be changed to false once the application is push to production.
