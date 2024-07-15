@@ -183,7 +183,7 @@ To use the passed data, you will [use django template formatting.](https://docs.
 
 #### Styling
 
-You can use a number of styling libraries with django, this example [uses bootstrap.](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+You can use a number of styling libraries with django, this example [uses bootstrap.](https://getbootstrap.com/docs/5.3/getting-started/introduction/). To access this bootstrap library on these templates, you will add the CDN link for CSS to the head section, [example](../Examples/django_proj/shop/templates/courses.html)
 
 ### Best Practices
 
