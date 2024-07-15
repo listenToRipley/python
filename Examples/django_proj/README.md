@@ -2,24 +2,32 @@
 
 This document will go over specific for this project and not [Django general functionality notes](../../Notes/Django.md)
 
-If you are using VSCode, you can install [Django Templates](https://marketplace.visualstudio.com/items?itemName=bibhasdn.django-html) to make template work easier.
-
 ## Setup
 
 Make sure you have your [pipenv running](../../Notes/Django.md/#setup).
 
+### Tech
+
+Database will be [sqlite3 interface here](https://docs.python.org/3/library/sqlite3.html)
+
+Template CSS display will be [bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
+If you are using VSCode, you can install [Django Templates](https://marketplace.visualstudio.com/items?itemName=bibhasdn.django-html) to make template work easier.
+
+### Applications
+
 This project contains the following applications:
 
-### Shop
+#### Shop
 
 Allow end users to view course information.
 
-#### Creation
+##### Creation
 Created by running `python manage.py startapp shop`
 
 This created a [folder](./shop/) where this application will be stored, this is considered a package.
 
-#### Model
+##### Model
 
 Inside the shop, we will have categories and courses. The relationship will be one to many, the one being the categories and the courses being the many.
 
@@ -27,7 +35,7 @@ Review [models for general questions](../../Notes/Django.md/#models)
 
 The categories to courses is a one to many relationship.
 
-### API
+#### API
 
 Responsible for client requests via JSON formatting.
 

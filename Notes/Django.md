@@ -181,6 +181,10 @@ If you have data that needs to be based, it will be done in your view via dictio
 
 To use the passed data, you will [use django template formatting.](https://docs.djangoproject.com/en/5.0/ref/templates/language/).
 
+#### Styling
+
+You can use a number of styling libraries with django, this example [uses bootstrap.](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
 ### Best Practices
 
 The "DEBUG" variable is base settings should be changed to false once the application is push to production.
