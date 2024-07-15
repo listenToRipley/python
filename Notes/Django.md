@@ -147,6 +147,8 @@ category = Category.objects.get(pk=1)
 category.course_set.create(title="Complete Python Guide", price=0.99, students_qty=100, reviews_qty=30)
 
 category.course_set.all()
+
+[course.title for course in category.course_set.all()]
 ```
 
 The method save is what will push your content to be added to the database.
@@ -156,6 +158,10 @@ If you wanted to see all data the currently exists in the terminal, you can run 
 To find a specific entry, you can use `ClassName.objects.get(pk=#)`. "pk" being your Primary Key. You could then assign it to a variable and access the content via dot notation. You don't have to use "pk", you could use any column header for that table and even use dot notation to return different content that would match. 
 
 You could filter by running `ClassName.objects.filter(pk=#)`. Filter does offer some arguments such as `columnName__containing="*"`
+
+##### via Admin
+
+You will need to [import models in the admin file](../Examples/django_proj/shop/admin.py) through the files included in your models file. Once your have completed the registration, then you should be able to refresh your application page and see the items listed on the admin page. You should be able to add, edit and delete all items that exist in the database through this interface.
 
 ### Best Practices
 
