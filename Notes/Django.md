@@ -126,6 +126,8 @@ It's important to note that when you are importing your views, import all and th
 
 This we need to add this package urls to the base urls by using the includes function, [example](../Examples/django_proj/base/urls.py)
 
+Make sure in each of your url application docs you include `app_name='application_name'`. This will allow django to find different applications use within your project and make routing easier. Best practice states that the name of your application that you use should make the base url provided for that applications in [here](../Examples/django_proj/base/urls.py)
+
 #### Nested Routes
 
 When you create additional paths on an application, then will be considered nested as their base url will be used before any specified paths.
@@ -138,7 +140,7 @@ You can create relative links by adding the value to the front `path/<type:varia
 
 To create relative paths in the template, you would add the matching value to your href. The sames goes for creating absolute paths. Neither of these methods are considered best practice as it will require changes to all locations where the path is used instead of changes to a single variable.
 
-The best way to pass your paths is first you add a name variable to the url patterns and the in your template is to use your urls paths `url "route_name" variable.id`
+The best way to pass your paths is first you add a name variable to the url patterns and the in your template is to use your urls paths `url "app_name:route_name" variable.id`
 
 ## General Info
 
