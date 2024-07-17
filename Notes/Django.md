@@ -138,6 +138,8 @@ You can create relative links by adding the value to the front `path/<type:varia
 
 To create relative paths in the template, you would add the matching value to your href. The sames goes for creating absolute paths. Neither of these methods are considered best practice as it will require changes to all locations where the path is used instead of changes to a single variable.
 
+The best way to pass your paths is first you add a name variable to the url patterns and the in your template is to use your urls paths `url "route_name" variable.id`
+
 ## General Info
 
 WSGI - Web Server Gateway Interface, this application is responsible for serving the rest of our application to the web and different end clients, (ex. ngix or apache). This is the default option. 
