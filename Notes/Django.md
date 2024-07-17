@@ -126,6 +126,14 @@ It's important to note that when you are importing your views, import all and th
 
 This we need to add this package urls to the base urls by using the includes function, [example](../Examples/django_proj/base/urls.py)
 
+#### Nested Routes
+
+When you create additional paths on an application, then will be considered nested as their base url will be used before any specified paths.
+
+To add theses, within the [urls doc under the url patterns](../Examples/django_proj/shop/urls.py) you add that different views that are associated with the templates you want to use.
+
+If you are using a given variable to return a given template, then you would pass in the value type and variable name to that the path: `<type:variable_name>` and then specify the view. This will allow you to call the database with that value as the parameter.
+
 ## General Info
 
 WSGI - Web Server Gateway Interface, this application is responsible for serving the rest of our application to the web and different end clients, (ex. ngix or apache). This is the default option. 
