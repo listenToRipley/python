@@ -2,11 +2,11 @@
 {% block title %} {{ course.title }} {% endblock %}
 {% block content %}
 
-<h1>{{course.title}}</h1>
+<h1 class="mt-4">{{course.title}}</h1>
 <h2>{{course.category}}</h2>
 <h3>Price: {{course.price}}</h3>
 <h3>Students Quanity: {{course.students_qty}}</h3>
 <h3>Reviews Quanity: {{course.reviews_qty}}</h3>
-
+<button class="btn btn-primary">Buy</button>
 
 {% endblock %}
