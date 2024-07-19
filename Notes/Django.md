@@ -197,6 +197,8 @@ If you have data that needs to be based, it will be done in your view via dictio
 
 To use the passed data, you will [use django template formatting.](https://docs.djangoproject.com/en/5.0/ref/templates/language/).
 
+For a better structure and easier access, it is best that the templates folder exist at the root of your project. In order to django to still access your different applications to use these templates, make sure that the [settings file](../Examples/django_proj/base/settings.py) under `TEMPLATES`, the variable `DIR` include the base path and the path to the associated file; e.g. `'DIR': [BASE_DIR / 'templates_folder_name']`
+
 #### Styling
 
 You can use a number of styling libraries with django, this example [uses bootstrap.](https://getbootstrap.com/docs/5.3/getting-started/introduction/). To access this bootstrap library on these templates, you will add the CDN link for CSS to the head section, [example](../Examples/django_proj/templates/base.html).
