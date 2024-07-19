@@ -162,6 +162,12 @@ Since you have to use `api.register(resource_name)`, then under your `urlpattern
 
 This does mean that the version control does have to be included in the route though before the arguments.
 
+If you need information about what could be provided in this call, you can use the path just the version.
+
+For the keyword schema, this will provide details on what could be returned and they types of the contents of the call.
+
+##### HTML Calls
+
 ## General Info
 
 WSGI - Web Server Gateway Interface, this application is responsible for serving the rest of our application to the web and different end clients, (ex. ngix or apache). This is the default option. 

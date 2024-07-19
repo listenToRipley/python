@@ -18,6 +18,8 @@ For API, we will use [Tastypie.](https://django-tastypie.readthedocs.io/en/lates
 
 To make requests easier to read, you can use [JSON Formatter](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?pli=1)
 
+For API calls use [Postman](https://www.postman.com/)
+
 ### Applications
 
 This project contains the following applications:
