@@ -16,6 +16,8 @@ If you are using VSCode, you can install [Django Templates](https://marketplace.
 
 For API, we will use [Tastypie.](https://django-tastypie.readthedocs.io/en/latest/)
 
+To make requests easier to read, you can use [JSON Formatter](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?pli=1)
+
 ### Applications
 
 This project contains the following applications:

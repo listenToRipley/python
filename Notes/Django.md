@@ -144,6 +144,16 @@ To create relative paths in the template, you would add the matching value to yo
 
 The best way to pass your paths is first you add a name variable to the url patterns and the in your template is to use your urls paths `url "app_name:route_name" variable.id`
 
+#### API Routes
+
+You can [reuse the name path of multiple items.](../Examples/django_proj/base/urls.py) This means that if you share the path, all items that base route. This is usually use in the case of an api raw request that will return results of that call.
+
+The base route used in the starting point, but the model created should provide the desired output from the given call. The route dependencies, the arguments provided after the base, those will be determined by the content provided in your [model](../Examples/django_proj/api/models.py). You should see the table contents returned as well as variables provided inside of your Meta class.
+
+Depending on the package you used, that will determine the format type, but you may need to review your extensions to change the display of that format.
+
+Since our example project is using [tastypie](https://django-tastypie.readthedocs.io/en/latest/), the results will be in JSON format.
+
 ## General Info
 
 WSGI - Web Server Gateway Interface, this application is responsible for serving the rest of our application to the web and different end clients, (ex. ngix or apache). This is the default option. 

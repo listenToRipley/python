@@ -16,8 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from api.models import CategoryResource, CourseResource
+
+category_resource = CategoryResource()
+course_resource = CourseResource()
+
+# /api/categories/ All category
+# /api/courses/ All course
+# /api/categories/$id/ Single category
+# /api/courses/$id/ Single course
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('shop/', include('shop.urls')) # call shop routes stored in the the shop urls.py file
+    path('shop/', include('shop.urls')), # call shop routes stored in the the shop urls.py file
+    path('api/', include(category_resource.urls)),
+    path('api/', include(course_resource.urls))
 ]

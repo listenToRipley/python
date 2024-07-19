@@ -3,10 +3,6 @@ from shop.models import Category, Course
 
 # Create your models here.
 
-# END POINTS goals
-# /api/categories/$id/
-# /api/courses/$id/
-
 # This class will providing to categories in the db
 class CategoryResource(ModelResource):
   class Meta: # attributes for the resource
