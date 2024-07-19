@@ -231,6 +231,8 @@ In order to keep your templates concise, create a single point of entry, called,
 
 - Don't recreate models that already exist, just import them from the related application and reuse them; [e.g. shop in api](../Examples/django_proj/api/models.py)
 
+- Your API routes should be protected.
+
 #### Base
 
 Since application/packages will be stored on the same level, we need a base of operations for the general requested/starting information for a Django project, base should be considered as your global variable storage for your project. 
