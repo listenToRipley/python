@@ -32,6 +32,8 @@ This command will crease manage.py and a base folder. Base is a type of package 
 
 The manage.py file s the "django's command-line utility for administrative tasks".
 
+Make sure any additional package that you need to install use `pipenv install PACKAGE_NAME` and if required include version.
+
 ### Start Server
 
 Inside of your `pipenv shell` 
