@@ -1,5 +1,13 @@
 # Files
 
+## PIP
+
+Package manager for python.
+
+See the version you current have for linux `pip3 --version` for windows `pip --version`
+
+To see all the package available on your computer, `pip3 list` on linux and `pip list` for windows. 
+
 ## Built in Modules
 
 ### os
@@ -51,3 +59,41 @@ You do this through another built in module of `zipfile`.
 Comma seperated values.
 
 [Examples](../Examples/Files/csvs.py)
+
+## Sending Emails
+
+We are using the module [EmailMessage](https://docs.python.org/3/library/email.message.html) for this work.
+
+[The example](../Examples/Files/emails.py), will not work unless you have the [smtp](./Files.md/#smtp) running before you start this.
+
+You should see on your localhost the email sent once the code is run.
+
+These files have to be opened and closed like other examples of files. You can do this using the `with` keyword.
+
+### SMTP
+
+This example used the [docker container smtp4dev](https://github.com/rnwood/smtp4dev) as a server. This allows us to run sample emails from this docker server simulation.
+
+To start container run `docker run --rm -it -d -p 3000:80 -p 2525:25 rnwood/smtp4dev`
+
+To verify you container is running from the terminal, you can see it through `docker ps`
+
+To see the activity of the server, you can use `docker log container_id`. This will include messages sent through the server.
+
+#### Formatting for HTML
+
+Create an [HTML file](../Examples/Files/templates/template.html)
+
+You will then use the modules `Template` and `Path` to specific the location and format of your document. You can pass the values you used as marker through `$` and then process email as you would other email.
+
+## SQLite
+
+This examples used [sqlite3](https://docs.python.org/3/library/sqlite3.html)
+
+Database connections have to be opened and closed like other files. This can be done using the `with` keyword. If you can not connecting through a local instance, then make sure you specify the path to the db.
+
+To see output of this content, make use you do go [sqlitebrowser](https://sqlitebrowser.org/) and download the option for your system.
+
+Open it and then open your "db" by open the files created through your connection in your project.
+
+[Example](../Examples/Files/sqllite.py)

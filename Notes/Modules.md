@@ -4,6 +4,8 @@ Any py file is considered a module.
 
 *Do not name any files or directories the same as any built in modules, you will have issues.*
 
+To go over how this might be managed on a project, [review virtual environments](./VirtualEnv.md)
+
 ## Import
 
 you will use the keyword `import` to pull in a file. Export is not required to import a file.
@@ -39,9 +41,9 @@ Some of these built in options are:
 - [os](./Files.md/#os)
 - [pathlib](./Files.md/#pathlib)
 - [time](./Modules.md/#datetime)
-- sys
+- [sys]()
 - [math](../Examples/Modules/math_mod.py)
-- smtplib
+- [smtplib](../Notes/Files.md/#smtp)
 - zipfile
 - csv
 - statistics
@@ -67,6 +69,8 @@ Create a folder, place your module files inside of the folder. Create a file cal
 
 [Example](../Examples/Modules/my_package/)
 
+If you want/ need to install a specific version, you can find the different releases under, "release history" on the package pack. You will then run `pip install packagename==#.#.#`
+
 ### Datetime
 
 This import creates objects for date and time.
@@ -77,6 +81,32 @@ This import creates objects for date and time.
 
 You can use module `time` to measure how much time it takes to run some
 
-### SMTP
+### array
 
-This example used the [docker container smtp4dev](https://github.com/rnwood/smtp4dev) as a server.
+This function very similar to list and tuples. You specify the type of array you are creating as the first argument.
+
+If the values you are trying to append to the array are not of the type, an error will occur and you will not be added to the list; unless, the value can be converted to that type.
+
+[Example](../Examples/Modules/array_mod.py)
+
+#### Reading and writing
+
+The path provided for read and write are absolute.
+
+The files are usually saved as binary.
+
+If you want to read from a binary file, you will have to create an empty array where the values can be stored until read.
+
+### sys
+
+Sys is for system arguments. These are values that are stored within the python application itself. You can also get information about your application and system.
+
+They are passed through the file item, it looks something like `python3 main.py username password`
+
+If not agr are passed, then just the file name will be your agr.
+
+[Example](../Examples/Modules/sys_mod.py)
+
+### webbrowser
+
+[Example](../Examples/Modules/web_browser.py)

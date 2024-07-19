@@ -5,8 +5,11 @@
 - [Classes](./Classes.md)
 - [Modules](./Modules.md)
 - [Files](./Files.md)
+- [Virtual Environments](./VirtualEnv.md)
 
 ## General Notes
+
+If you see a variable with all caps, then it indicates that the variable's value is set before a programs starts remain constant throughout the running of the program; therefore; those values should not be changed throughout the life cycle of the application.
 
 ### Encapsulation
 
