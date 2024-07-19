@@ -213,9 +213,11 @@ In order to keep your templates concise, create a single point of entry, called,
 
 ### Best Practices
 
-The "DEBUG" variable is base settings should be changed to false once the application is push to production.
+- The "DEBUG" variable is base settings should be changed to false once the application is push to production.
 
-Don't modify models once you have data in your database.
+- Don't modify models once you have data in your database.
+
+- Don't recreate models that already exist, just import them from the related application and reuse them; [e.g. shop in api](../Examples/django_proj/api/models.py)
 
 #### Base
 

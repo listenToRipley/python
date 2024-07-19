@@ -39,7 +39,7 @@ The categories to courses is a one to many relationship.
 
 #### API
 
-Responsible for client requests via JSON formatting. This will allow access to database, courses and categories. 
+Responsible for client requests via JSON formatting. This will allow access to database, courses and categories, which we will consider "resources".
 
 The tool used for this is [Tastypie](https://django-tastypie.readthedocs.io/en/latest/), specifically version 0.14.5.
 
