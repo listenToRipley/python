@@ -222,3 +222,7 @@ Don't modify models once you have data in your database.
 Since application/packages will be stored on the same level, we need a base of operations for the general requested/starting information for a Django project, base should be considered as your global variable storage for your project. 
 
 Using the name base makes this easy to identify that folder. 
+
+### Resources
+
+To organize use API services,the two most popular options are [django rest framework](https://www.django-rest-framework.org/) and [Tastypie.](https://django-tastypie.readthedocs.io/en/latest/). Django rest framework is very powerful and was considered overkill for the example project here so tastypie was used instead.

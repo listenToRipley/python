@@ -1,7 +1,8 @@
 {
     "cSpell.words": [
         "makemigrations",
-        "seperated"
+        "seperated",
+        "Tastypie"
     ],
     "deno.enable": true
 }

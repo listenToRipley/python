@@ -14,6 +14,8 @@ Template CSS display will be [bootstrap](https://getbootstrap.com/docs/5.3/getti
 
 If you are using VSCode, you can install [Django Templates](https://marketplace.visualstudio.com/items?itemName=bibhasdn.django-html) to make template work easier.
 
+For API, we will use [Tastypie.](https://django-tastypie.readthedocs.io/en/latest/)
+
 ### Applications
 
 This project contains the following applications:
@@ -37,7 +39,9 @@ The categories to courses is a one to many relationship.
 
 #### API
 
-Responsible for client requests via JSON formatting.
+Responsible for client requests via JSON formatting. This will allow access to database, courses and categories. 
+
+The tool used for this is [Tastypie](https://django-tastypie.readthedocs.io/en/latest/), specifically version 0.14.5.
 
 ## Database
 
