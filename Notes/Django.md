@@ -189,6 +189,10 @@ You will need to [import models in the admin file](../Examples/django_proj/shop/
 
 To change the name/titles displayed in the admin site, you need to provide a method to your [model class](../Examples/django_proj/shop/models.py) that will return the associated name/title you want returned inside of the object quantity.
 
+#### Modifying tables
+
+If you need to make changes to the structure of you database, those changes should be applied to your [model class](../Examples/django_proj/shop/models.py), then run `python manage.py makemigrations`. After you will need to restart the server and reapply `python manage.py migrate` to see those changes in the database. If default data is note provided, those need fields will be blank and need to be populated.
+
 ### Templates
 
 Inside your application, you will create a [templates folder](../Examples/django_proj/templates/), where you will store your content for display. This will need to be linked back to your [views](#views) in order for the content to be assessed in your application. 

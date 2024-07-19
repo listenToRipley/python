@@ -14,6 +14,7 @@ class Course (models.Model):
   students_qty = models.IntegerField()
   reviews_qty = models.IntegerField()
   category = models.ForeignKey(Category, on_delete=models.CASCADE)
+  created_at = models.DateTimeField(default= timezone.now)
 
   def __str__(self):
     return f"{self.title}"
