@@ -199,6 +199,8 @@ To use the passed data, you will [use django template formatting.](https://docs.
 
 For a better structure and easier access, it is best that the templates folder exist at the root of your project. In order to django to still access your different applications to use these templates, make sure that the [settings file](../Examples/django_proj/base/settings.py) under `TEMPLATES`, the variable `DIR` include the base path and the path to the associated file; e.g. `'DIR': [BASE_DIR / 'templates_folder_name']`
 
+It also will create a better structure if each applications templates have their own sub folders to create better organization and easier navigation. This means that in your views you need to be more specific about the location of your html documents within the template structure.
+
 #### Styling
 
 You can use a number of styling libraries with django, this example [uses bootstrap.](https://getbootstrap.com/docs/5.3/getting-started/introduction/). To access this bootstrap library on these templates, you will add the CDN link for CSS to the head section, [example](../Examples/django_proj/templates/base.html).

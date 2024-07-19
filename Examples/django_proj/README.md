@@ -70,3 +70,4 @@ If you have any issues with any of these steps check the following:
 
 - Is your pipenv shell running?
 - Have you pushed all recent changed to git?
+- Have you validate the path you are using for this item?
