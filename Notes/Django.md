@@ -148,11 +148,19 @@ The best way to pass your paths is first you add a name variable to the url patt
 
 You can [reuse the name path of multiple items.](../Examples/django_proj/base/urls.py) This means that if you share the path, all items that base route. This is usually use in the case of an api raw request that will return results of that call.
 
-The base route used in the starting point, but the model created should provide the desired output from the given call. The route dependencies, the arguments provided after the base, those will be determined by the content provided in your [model](../Examples/django_proj/api/models.py). You should see the table contents returned as well as variables provided inside of your Meta class.
+The base route used in the starting point, but the model created should provide the desired output from the given call. The route dependencies, the arguments provided after the base, those will be determined by the content provided in your [model](../Examples/django_proj/api/models.py). You should see the table contents returned as well as variables provided inside of your Meta class. This section will also determine what html methods you are able to perform.
 
 Depending on the package you used, that will determine the format type, but you may need to review your extensions to change the display of that format.
 
 Since our example project is using [tastypie](https://django-tastypie.readthedocs.io/en/latest/), the results will be in JSON format.
+
+##### Versions 
+
+Use versions for your API to provide allow for different API calls to be use or discontinues, this would be done in your [routing](../Examples/django_proj/base/urls.py). Each version will have to be registered for that given resource.
+
+Since you have to use `api.register(resource_name)`, then under your `urlpatterns`, you would no longer have to use a specified patterns like `path('api/', include(resource_name.urls))`, you just have all the api's grouped together under that register.
+
+This does mean that the version control does have to be included in the route though before the arguments.
 
 ## General Info
 
