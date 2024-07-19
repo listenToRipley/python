@@ -10,7 +10,7 @@ Make sure you have your [pipenv running](../../Notes/Django.md/#setup).
 
 Database will be [sqlite3 interface here](https://docs.python.org/3/library/sqlite3.html)
 
-Template CSS display will be [bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/). We will install via the CDN links, (only CSS) which will be added to the head section, [example](./shop/templates/base.html)
+Template CSS display will be [bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/). We will install via the CDN links, (only CSS) which will be added to the head section, [example](./templates/base.html)
 
 If you are using VSCode, you can install [Django Templates](https://marketplace.visualstudio.com/items?itemName=bibhasdn.django-html) to make template work easier.
 

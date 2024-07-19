@@ -191,7 +191,7 @@ To change the name/titles displayed in the admin site, you need to provide a met
 
 ### Templates
 
-Inside your application, you will create a [templates folder](../Examples/django_proj/shop/templates/), where you will store your content for display. This will need to be linked back to your [views](#views) in order for the content to be assessed in your application. 
+Inside your application, you will create a [templates folder](../Examples/django_proj/templates/), where you will store your content for display. This will need to be linked back to your [views](#views) in order for the content to be assessed in your application. 
 
 If you have data that needs to be based, it will be done in your view via dictionaries. 
 
@@ -199,9 +199,9 @@ To use the passed data, you will [use django template formatting.](https://docs.
 
 #### Styling
 
-You can use a number of styling libraries with django, this example [uses bootstrap.](https://getbootstrap.com/docs/5.3/getting-started/introduction/). To access this bootstrap library on these templates, you will add the CDN link for CSS to the head section, [example](../Examples/django_proj/shop/templates/base.html).
+You can use a number of styling libraries with django, this example [uses bootstrap.](https://getbootstrap.com/docs/5.3/getting-started/introduction/). To access this bootstrap library on these templates, you will add the CDN link for CSS to the head section, [example](../Examples/django_proj/templates/base.html).
 
-In order to keep your templates concise, create a single point of entry, called, [base](../Examples/django_proj/shop/templates/base.html) and then [extend each piece of dependent content](../Examples/django_proj/shop/templates/courses.html). You need to indict each template used on the base by name.
+In order to keep your templates concise, create a single point of entry, called, [base](../Examples/django_proj/templates/base.html) and then [extend each piece of dependent content](../Examples/django_proj/templates/courses.html). You need to indict each template used on the base by name.
 
 ### Best Practices
 
