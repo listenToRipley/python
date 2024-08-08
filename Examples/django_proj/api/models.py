@@ -1,5 +1,7 @@
 from tastypie.resources import ModelResource
 from shop.models import Category, Course
+from tastypie.authentication import ApiKeyAuthentication
+from tastypie.authorization import Authorization
 
 # Create your models here.
 
@@ -16,3 +18,5 @@ class CourseResource(ModelResource):
     queryset = Course.objects.all()
     resource_name = 'courses'
     allow_method = ['get', 'delete', 'post']
+    authentication = ApiKeyAuthentication()
+    authorization = Authorization()

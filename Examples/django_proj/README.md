@@ -64,4 +64,18 @@ Run 'python manage.py migrate' to apply them.
 
 [Review notes here for additional questions regarding migrations](../../Notes/Django.md/#migrations)
 
-Kee
+Keep in mind that since we are using Category as the foreign key, elements can be set through the use of the primary key, [see here for examples](../../Notes/Django.md/#database)
+
+## Admin
+
+To create access run `python manage.py createsuperuser`
+
+You should now be able to login to the admin dashboard for Django. You will see Groups and Users.
+
+## Trouble shooting
+
+If you have any issues with any of these steps check the following:
+
+- Is your pipenv shell running?
+- Have you pushed all recent changed to git?
+- Have you validate the path you are using for this item?

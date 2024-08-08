@@ -108,9 +108,9 @@ If you need to make changes to the content of your database, make alterations to
 
 Where your test cases will be stored.
 
-###### modifying
+###### Permissions
 
-In order to allow access to do something to your models, you need to allow access. [Example](../Examples/django_proj/shop/models.py)
+In order to allow access to do something to your models best practice state that you should authenticate (who you are) and authorize (what you can do once you get there). You need to [import that functionality](../Examples/django_proj/api/models.py) to your application.
 
 ###### views 
 
