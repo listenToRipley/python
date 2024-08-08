@@ -108,6 +108,10 @@ If you need to make changes to the content of your database, make alterations to
 
 Where your test cases will be stored.
 
+###### modifying
+
+In order to allow access to do something to your models, you need to allow access. [Example](../Examples/django_proj/shop/models.py)
+
 ###### views 
 
 This is your controllers that will connect your [view with models.](#view), this is where all our logic for sending and receiving requests between the models and the client templates.
