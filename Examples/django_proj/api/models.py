@@ -15,8 +15,4 @@ class CategoryResource(ModelResource):
 
 class CourseResource(ModelResource):
   class Meta:
-    queryset = Course.objects.all()
-    resource_name = 'courses'
-    allow_method = ['get', 'delete', 'post']
-    authentication = ApiKeyAuthentication()
-    authorization = Authorization()
+    

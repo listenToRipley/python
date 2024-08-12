@@ -21,19 +21,3 @@ from tastypie.api import Api
 
 api = Api(api_name = 'v1')
 category_resource = CategoryResource()
-course_resource = CourseResource()
-
-# registerer api resources
-api.register(category_resource)
-api.register(course_resource)
-
-# /api/categories/ All category
-# /api/courses/ All course
-# /api/categories/$id/ Single category
-# /api/courses/$id/ Single course
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('shop/', include('shop.urls')), # call shop routes stored in the the shop urls.py file
-    path('api/', include(api.urls)),
-]
