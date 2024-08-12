@@ -9,4 +9,5 @@ django-tastypie = "==0.14.5"
 
 [dev-packages]
 
-[requi
+[requires]
+python_version = "3.12"

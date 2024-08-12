@@ -174,6 +174,8 @@ For the keyword schema, this will provide details on what could be returned and 
 
 With the [API model](../Examples/django_proj/api/models.py) class, you must specify the types of methods that be allowed under the `allow_method`. If the type of HTML call is not outlined there, you will receive an error what this is attempted.
 
+To restrict access or customize authentication, (such as being `GET` always accessible), you can create an [customized process](../Examples/django_proj/api/authentication.py)
+
 ###### Keys
 
 If you create an API key for your calls within the admin site, that content will be required moving forward to all API calls. The key would look something like: `Authorization: ApiKey username:apiKeyHere123`

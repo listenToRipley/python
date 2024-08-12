@@ -1,6 +1,6 @@
 from tastypie.resources import ModelResource
 from shop.models import Category, Course
-from tastypie.authentication import ApiKeyAuthentication
+from api.authentication import CustomApiKeyAuthentication
 from tastypie.authorization import Authorization
 
 # Create your models here.
@@ -15,4 +15,8 @@ class CategoryResource(ModelResource):
 
 class CourseResource(ModelResource):
   class Meta:
-    
+    queryset = Course.objects.all()
+    resource_name = 'courses'
+    allow_method = ['get', 'delete', 'post']
+    authentication = CustomApiKeyAuthentication()
+    authorization = Authorization()
