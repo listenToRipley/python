@@ -2,7 +2,8 @@
 
 This repo is for learning Python:
 
-- [Python – Complete Python, Django, Data Science and ML Guide through udemy](https://www.udemy.com/course/python-complete-guide/)
+- [Python – Complete Python, Django, Data Science and ML Guide through udemy](./Udemy%20Course/README.md)
+- [FASTAPI with freeCodeCamp.com](./FastAPI/README.md)
 
 ## Contents
 
