@@ -108,6 +108,10 @@ If you need to make changes to the content of your database, make alterations to
 
 Where your test cases will be stored.
 
+###### Permissions
+
+In order to allow access to do something to your models best practice state that you should authenticate (who you are) and authorize (what you can do once you get there). You need to [import that functionality](../Examples/django_proj/api/models.py) to your application and assign to a variable that will be referenced for API calls.
+
 ###### views 
 
 This is your controllers that will connect your [view with models.](#view), this is where all our logic for sending and receiving requests between the models and the client templates.
@@ -164,9 +168,22 @@ This does mean that the version control does have to be included in the route th
 
 If you need information about what could be provided in this call, you can use the path just the version.
 
-For the keyword schema, this will provide details on what could be returned and they types of the contents of the call.
+For the keyword schema, this will provide details on what could be returned and they types of the contents of the call,(via url), it would look something like this: `BASEURL/api/version/table/schema`.
 
 ##### HTML Calls
+
+With the [API model](../Examples/django_proj/api/models.py) class, you must specify the types of methods that be allowed under the `allow_method`. If the type of HTML call is not outlined there, you will receive an error what this is attempted.
+
+To restrict access or customize authentication, (such as being `GET` always accessible), you can create an [customized process](../Examples/django_proj/api/authentication.py)
+
+###### Keys
+
+If you create an API key for your calls within the admin site, that content will be required moving forward to all API calls. The key would look something like: `Authorization: ApiKey username:apiKeyHere123`
+
+###### DELETE and POST
+
+The [API model](../Examples/django_proj/api/models.py) must contain variable that [assign the authentication and authorization.](#permissions), one those variable have been assigned to the class, then you should get a 200 code that provides details on what was one. If you receive a 400 code, make sure to validate your keys, (via the admin on panel) and review your model to make sure that import and variable have been correctly assigned.
+
 
 ## General Info
 
