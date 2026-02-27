@@ -4,6 +4,8 @@ This repo is for learning Python:
 
 - [Python – Complete Python, Django, Data Science and ML Guide through udemy](./Udemy%20Course/README.md)
 - [FASTAPI with freeCodeCamp.com](./FastAPI/README.md)
+- [ZENVA](./Zenva/README.md)
+
 
 ## Contents
 
